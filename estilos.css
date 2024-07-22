@@ -6,8 +6,8 @@ body{
 
 .navbar{
     display: flex;
-    background-color: rgb(61, 61, 61);
-    color: white;
+    background-color: rgb(77, 77, 77);
+    color: rgb(255, 0, 0);
     justify-content: center;
     height: 40px;
 }
@@ -75,6 +75,6 @@ body{
 }
 
 .img_custom{
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 300px;
+    max-height: 250px;
 }
