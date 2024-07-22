@@ -6,7 +6,8 @@
     <title>Document</title>
 
     
-    <link rel="stylesheet" href="estilos.css">
+    <!-- <link rel="stylesheet" href="estilos.css"> -->
+    <link rel="stylesheet" href="styles.css">
 
 </head>
     <body>
@@ -18,3 +19,4 @@
                 </div>
             </nav>
         </header>
+        <script src="path/to/dist/feather.js"></script>
