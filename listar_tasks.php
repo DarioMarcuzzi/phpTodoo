@@ -1,7 +1,7 @@
 <?php 
 include_once('header.php');
 include_once('autoImageWhid.php');
-require 'vendor/autoload.php'; // Asegúrate de cargar el autoloader de Composer
+require 'vendor/autoload.php'; 
 $icons = new Feather\IconManager();
 
 
@@ -49,6 +49,7 @@ $miArray = array(
         <div class="container_card_task">
             <div class="header_card_task">
                 <a style="color: black;" href="index.php?id=<?php echo $mostrar_datos['id'];"desctipcion="?>"><?php echo $icons->getIcon('edit') ?></a>
+                    <div><?php echo $mostrar_datos['fecha']?></div>
                 <a style="color: black;" href="eliminar_task.php?id=<?php echo $mostrar_datos['id']; ?>"><?php echo $icons->getIcon('trash-2') ?></a>
             </div>
             <div> <?php echo $mostrar_datos['descripcion'] ?> </div>

@@ -45,6 +45,7 @@ body{
    height: 200px;
     padding: 10px;
     resize: none;
+    color: black;
 }
 
 .content-img{

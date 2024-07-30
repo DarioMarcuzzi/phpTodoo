@@ -6,11 +6,9 @@ $id = $_POST["id"];
 $descripcion = $_POST["descripcion"];
 $imagen = $_POST["imagen"];
 
-echo $descripcion;
-echo $imagen;
-echo $id;
+$fecha_actual = date('d/m/y');
 
-$query = "UPDATE tasks SET descripcion = '$descripcion' , imagen= '$imagen'  WHERE id = '$id'";
+$query = "UPDATE tasks SET descripcion = '$descripcion' , imagen= '$imagen' , fecha = '$fecha_actual' WHERE id = '$id'";
 $resultado = mysqli_query($conexion, $query);
 
 if ($resultado) {
