@@ -8,6 +8,9 @@ $mensaje  = "";
 if(isset($_GET['ok'])){
     $mensaje = "<p>Tarea creada correctamente</p>";
 };
+if(isset($_GET['error'])){
+    $mensaje = "<p>El textArea no puede estar vacio</p>";
+};
 
 
 if(isset($_GET['id'])){
@@ -38,9 +41,10 @@ if(isset($_GET['id'])){
                     <label for="imagen">Imagen</label>
                     <input style="display: none;" value="<?php echo $id; ?>" type="text" name="id" id="id" >
                     <input style="display: none;" value="<?php echo $task['imagen']; ?>" type="text" name="imagen" id="imagen" >
-                    <?php 
-                     mostrarImagenConTamanos($task['imagen'])
-                    ?>
+                    <?php                 
+                     mostrarImagenConTamanos($task['imagen']);
+                     ?>
+                     <input type="file" name="imagen" />
 
                     <br>
                     <button type="submit" class="">EDITAR</button>

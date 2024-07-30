@@ -1,11 +1,20 @@
 <?php
 include('conexion.php');
 
-$descripcion = $_POST['descripcion'];
-$imagen = $_POST['imagen'];
+$descripcion = isset($_POST['descripcion']) ? trim($_POST['descripcion']) : '';
+$imagen = isset($_POST['imagen']) ? trim($_POST['imagen']) : '';
+
+$fecha_actual = date('d/m/y');
+
+if( empty($descripcion)){
+    header("Location: index.php?error");
+    exit;
+}
+
+
 
 // Ejecuta la consulta INSERT
-$query = "INSERT INTO tasks (descripcion, imagen) VALUES ('$descripcion', '$imagen')";
+$query = "INSERT INTO tasks (descripcion, imagen , fecha) VALUES ('$descripcion', '$imagen' , '$fecha_actual')";
 $resultado = mysqli_query($conexion, $query);
 
 if ($resultado) {
