@@ -2,7 +2,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $contrasena = "";
-$basedatos = "cursophp_todooapp_php";
+$basedatos = "phptoodo";
 
 $conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
 

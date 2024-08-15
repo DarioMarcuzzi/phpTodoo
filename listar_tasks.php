@@ -58,26 +58,6 @@ $miArray = array(
 
 
              mostrarImagenConTamanos($imagen_path);
-            //  if (!empty($imagen_path)) {
-            //     list($ancho, $alto, $tipo) = getimagesize('img/'.$imagen_path);
-            
-            //     switch (true) {
-            //         case ($ancho > 800 && $alto > 400):  // esto ocupa 4/4 de grid
-            //             echo '<img class="img_customC" src="img/'.$imagen_path.'" alt="not Found" />';
-                        
-            //             break;
-            //         case ($ancho > 500 && $alto > 250): // esto ocupa 3/4 de grid
-            //             echo '<img class="img_customB" src="img/'.$imagen_path.'" alt="not Found" />';
-            //             break;
-
-            //         case ($ancho > 300 && $alto > 150): // esto ocupa 2/4 de grid
-            //             echo '<img class="img_customA" src="img/'.$imagen_path.'" alt="not Found" />';
-            //             break;
-            //         default:                            // esto ocupa 1/4 de grid
-            //             echo '<img class="img_custom" src="img/'.$imagen_path.'" alt="not Found" />';
-            //             break;
-            //     }
-            // } 
             ?>
             
         </div>

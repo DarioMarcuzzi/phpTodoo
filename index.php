@@ -44,7 +44,7 @@ if(isset($_GET['id'])){
                     <?php                 
                      mostrarImagenConTamanos($task['imagen']);
                      ?>
-                     <input type="file" name="imagen" />
+                     <input type="file" name="archivo" />
 
                     <br>
                     <button type="submit" class="">EDITAR</button>
@@ -58,8 +58,7 @@ if(isset($_GET['id'])){
                     <textarea class="custom_textarea" name="descripcion" id="descripcion" required> </textarea>
                     <br>
                     <label for="imagen">Imagen</label>
-                    <input type="text" name="imagen" id="imagen" >
-                    <input type="file" name="imagen" />
+                    <input type="file" name="archivo" />
                     <br>
                     <button type="submit" class="">GO</button>
                 </form>
